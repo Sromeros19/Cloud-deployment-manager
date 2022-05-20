@@ -4,8 +4,6 @@
 
 ## Conceptos básicos de deployment management
 
----
-
 ### **Configuración**
 
 Una configuración describe todos los recursos que deseas para una sola implementación. Una configuración es un archivo escrito en la sintaxis YAML que enumera cada uno de los recursos que deseas crear y sus propiedades de recursos respectivas. Una configuración debe contener una sección resources: seguida de la lista de recursos que crear.
