@@ -58,6 +58,18 @@ Con referencias, puedes:
 
 - Acceder a propiedades que no se definen hasta que se crea el recurso. Por ejemplo, cuando defines una máquina virtual en la configuración, aún no conoces su dirección IP. Sin embargo, todavía puedes usar una referencia a la dirección IP. Cuando implementas la configuración, primero se crea la VM y Deployment Manager obtiene la dirección IP externa cuando está disponible.
 
+### Deployment Manager frente a CloudFormation y ARM
+
+Google Cloud Deployment Manager resultará familiar para los equipos de TI que han trabajado con AWS CloudFormation o Ansible, donde las plantillas también están escritas en formato YAML. Terraform utiliza un lenguaje de configuración y una sintaxis patentados.
+
+Las plantillas de AWS CloudFormation pueden incluir metadatos, resultados y condiciones, que son similares a los esquemas de Deployment Manager.
+
+Para los que esten familiarizados con Microsoft Azure Resource Manager (BRAZO) también verán similitudes en la oferta de plantillas nativas de Google. ARM usa JSON como sintaxis de plantilla, pero dado que YAML es esencialmente un superconjunto JSON, la sintaxis y la estructura del archivo son similares. Las tres herramientas IaC nativas de la nube brindan capacidades similares, aunque CloudFormation admite la mayor parte de los servicios nativos.
+
+### Cómo implementar la infraestructura de Google Cloud como código
+
+Los administradores de la nube pueden acceder a Deployment Manager a través de Google Cloud Console. La IU muestra una vista jerárquica de una implementación completa, pero las configuraciones generalmente se activan a través de la herramienta de línea de comandos de gcloud. Los archivos de configuración, plantilla y esquema son textuales, por lo que los usuarios pueden crearlos con cualquier editor de texto.
+
 ## Instalación y configuración
 
 Se explicará como usar deployment management con la herramienta gcloud para preparar el entorno local.
